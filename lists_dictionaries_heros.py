@@ -21,16 +21,16 @@ franchise = {
 z = [{'x': 10, 'y': 20}]
 # 1.) How would you change the value 10 in x to 15?  Once you're done x should then be [ [5,2,3], [15,8,9] ].
 x[1][0] = 15
-# print(x)
+print(x)
 # 2.) How would you change the hero_name of the first hero from 'Batman' to "Dark Knight"?
 heros[0]['hero_name'] = "Dark Knight"
-# print(heros[0])
+print(heros[0])
 # 3.) For the franchise dictionary, how would you change 'Aquaman' to 'Daredevil'?
 franchise['dc'][1] = 'Daredevil'
-# print(franchise)
+print(franchise)
 # 4.) For z, how would you change the value 20 to 30?
 z[0]['y'] = 30
-# print(z)
+print(z)
 
 # -----------------------------------------------------------------
 # Problem 2
@@ -52,7 +52,7 @@ def iterateDictionary(heros):
         print(
             f"real_name - {subDict['real_name']}, hero_name - {subDict['hero_name']}")
 
-# iterateDictionary(superheros)
+iterateDictionary(superheros)
 
 # real_name - Steve Rogers, hero_name - Captain America
 # real_name - Barry Allan, hero_name - The Flash
@@ -75,7 +75,7 @@ def iterateDictionary2(key, heros):
     for subDict in heros:
         print(f"{subDict[key]}")
 
-# iterateDictionary2('real_name', superheros)
+iterateDictionary2('real_name', superheros)
 
 
 # -----------------------------------------------------------------
